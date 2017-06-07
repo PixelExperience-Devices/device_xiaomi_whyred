@@ -229,6 +229,9 @@ BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
 # Tap to wake
 TARGET_TAP_TO_WAKE_NODE := "/sys/devices/soc/c175000.i2c/i2c-1/1-0020/input/input2/wake_gesture"
 
+# Use mke2fs to create ext4 images
+TARGET_USES_MKE2FS := true
+
 # Vendor init
 TARGET_INIT_VENDOR_LIB := libinit_whyred
 TARGET_RECOVERY_DEVICE_MODULES := libinit_whyred
