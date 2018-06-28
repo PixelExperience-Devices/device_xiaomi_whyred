@@ -1,26 +1,24 @@
-Copyright (C) 2018-2019 The PixelExperience Open Source Project
+# Device Tree for Xiaomi Redmi Note 5 / Note 5 Pro (whyred)
 
-The Redmi Note 5 (codenamed _"whyred"_) are high-end mid-range smartphones from Xiaomi.
+## Spec Sheet
 
-Xiaomi Redmi Note 5 was announced and released in March 2018.
+| Feature                 | Specification (Note 5)            | Specification (Note 5 Pro)        |
+| :---------------------- | :-------------------------------- | :-------------------------------- |
+| CPU                     | 8x Qualcomm® Kryo™ 260 CPU        | ""                                |
+| Chipset                 | Qualcomm Snapdragon 636           | ""                                |
+| GPU                     | Adreno 509                        | ""                                |
+| Memory                  | 3/4/6 GB                          | 4/6 GB                            |
+| Shipped Android Version | 8.1.0                             | 7.1.1                             |
+| Storage                 | 32/64 GB eMMC 5.1 flash storage   | 64 GB eMMC 5.1 flash storage      |
+| MicroSD                 | Up to 128 GB                      | ""                                |
+| Battery                 | 4000 mAh (non-removable)          | ""                                |
+| Dimensions              | 158.6 x 75.4 x 8.05 mm            | ""                                |
+| Display                 | 2160x1080 pixels, 5.99 (~403 PPI) | ""                                |
+| Rear Camera             | 12 MP + 5 MP, LED flash           | ""                                |
+| Front Camera            | 13 MP                             | 20 MP                             |
+| Release Date            | 14 February 2018                  | ""                                |
 
-## Device specifications
+## Device Picture
 
-| Device       | Xiaomi Redmi Note 5                         |
-| -----------: | :---------------------------------------------- |
-| SoC          | Qualcomm SDM660 Snapdragon 636                  |
-| CPU          | 8x Qualcomm® Kryo™ 260 up to 1.8GHz             |
-| GPU          | Adreno 509                                      |
-| Memory       | 4GB / 6GM RAM (LPDDR4X)                         |
-| Shipped Android version | 8.1.0                              |
-| Storage      | 64GB eMMC 5.1 flash storage                     |
-| Battery      | Non-removable Li-Po 4000 mAh                    |
-| Dimensions   | 158.6 x 75.4 x 8.05 mm                          |
-| Display      | 2160 x 1080 (18:9), 5.99 inch                   |
-| Rear camera 1 | 12MP, 1.25-micron pixels, f/2.2 Dual LED flash |
-| Rear camera 2 | 5MP, 1.12-micron pixels, f/2.0                |
-| Front camera | 20MP, 1-micron pixels, f/2.2 1080p 30 fps video, Selfie-light|
+![Redmi Note 5](http://i01.appmifile.com/webfile/globalimg/2018/02141/phone-black.jpg "Redmi Note 5")
 
-## Device picture
-
-![Xiaomi Redmi Note 5 Pro](https://www1-lw.xda-cdn.com/files/2018/02/Xiaomi-Redmi-Note-5-and-Redmi-Note-5-Pro-Forums-now-Open.png)
