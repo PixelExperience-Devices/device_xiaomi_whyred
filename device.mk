@@ -65,8 +65,7 @@ TARGET_SCREEN_HEIGHT := 2160
 TARGET_SCREEN_WIDTH := 1080
 
 # Camera
-PRODUCT_PACKAGES += \
-    Snap
+$(call inherit-product, vendor/xiaomi/MiuiCamera/config.mk)
 
 # Connectivity Engine support (CNE)
 PRODUCT_PACKAGES += \
