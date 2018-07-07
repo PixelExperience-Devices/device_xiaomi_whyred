@@ -12,5 +12,11 @@
     "target_path": "packages/resources/devicesettings",
     "branch": "lineage-15.1",
     "remote": "github"
+  },
+  {
+    "repository": "jhenrique09/prebuilts_clang_host_linux-x86_7.0-DragonTC",
+    "target_path": "prebuilts/clang/host/linux-x86/7.0-DragonTC",
+    "branch": "master",
+    "remote": "github"
   }
 ]
