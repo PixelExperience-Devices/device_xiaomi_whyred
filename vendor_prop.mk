@@ -122,7 +122,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.debug.wfd.enable=1 \
     persist.sys.wfd.virtual=0 \
     ro.opengles.version=196610 \
-    ro.sf.lcd_density=480 \
+    ro.sf.lcd_density=420 \
     sdm.debug.disable_skip_validate=1 \
     vendor.display.enable_default_color_mode=0
 
