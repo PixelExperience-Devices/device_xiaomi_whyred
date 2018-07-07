@@ -302,6 +302,10 @@ $(call inherit-product, vendor/xiaomi/whyred/whyred-vendor.mk)
 PRODUCT_PACKAGES += \
     vndk-sp
 
+# Whitelisted app
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/qti_whitelist.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/qti_whitelist.xml
+
 # Wifi
 PRODUCT_PACKAGES += \
     ipacm \
