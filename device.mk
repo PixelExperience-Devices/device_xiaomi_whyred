@@ -171,7 +171,8 @@ PRODUCT_PACKAGES += \
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay
+    $(LOCAL_PATH)/overlay \
+    vendor/aosp/overlay/CarrierConfig
 
 # OMX
 PRODUCT_PACKAGES += \
