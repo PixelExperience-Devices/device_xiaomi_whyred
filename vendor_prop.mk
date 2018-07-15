@@ -182,11 +182,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
    ro.netflix.bsp_rev=Q660-13149-1
 
-# NFC DT
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.nfc.port=I2C \
-    ro.hardware.nfc_nci=nqx.default
-
 # NTP Server
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.backup.ntpServer="0.pool.ntp.org" \
