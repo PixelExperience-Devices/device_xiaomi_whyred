@@ -14,12 +14,6 @@
     "remote": "github"
   },
   {
-    "repository": "jhenrique09/prebuilts_clang_host_linux-x86_7.0-DragonTC",
-    "target_path": "prebuilts/clang/host/linux-x86/7.0-DragonTC",
-    "branch": "master",
-    "remote": "github"
-  },
-  {
     "repository": "jhenrique09/vendor_xiaomi_MiuiCamera",
     "target_path": "vendor/xiaomi/MiuiCamera",
     "branch": "master",
