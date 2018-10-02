@@ -23,6 +23,8 @@
 
 $(call inherit-product, vendor/xiaomi/whyred/whyred-vendor.mk)
 
+PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
+
 # Vendor properties
 -include $(LOCAL_PATH)/vendor_prop.mk
 
