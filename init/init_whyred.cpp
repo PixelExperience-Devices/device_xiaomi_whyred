@@ -66,7 +66,7 @@ static void init_setup_model_properties()
             break;
     fin.close();
 
-    if (buf.find("CN") != std::string::npos) {
+    if (buf.find("CN") != std::string::npos || buf.find("Global") != std::string::npos) {
         property_override_dual("ro.product.model", "ro.vendor.product.model", "Redmi Note 5");
     } else {
         property_override_dual("ro.product.model", "ro.vendor.product.model",  "Redmi Note 5 Pro");
