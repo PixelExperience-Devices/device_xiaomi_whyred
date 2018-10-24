@@ -14,9 +14,7 @@
     "remote": "github"
   },
   {
-    "repository": "jhenrique09/vendor_xiaomi_MiuiCamera",
-    "target_path": "vendor/xiaomi/MiuiCamera",
-    "branch": "master",
-    "remote": "github"
+    "repository": "vendor_MiuiCamera",
+    "target_path": "vendor/MiuiCamera"
   }
 ]
