@@ -586,4 +586,6 @@
          specified -->
     <string name="default_wallpaper_component" translatable="false">com.breel.wallpapers19/com.breel.wallpapers19.doodle.wallpaper.variations.DoodleWallpaperV1</string>
 
+    <!-- True if the firmware supports connected MAC randomization -->
+    <bool name="config_wifi_connected_mac_randomization_supported">true</bool>
 </resources>
