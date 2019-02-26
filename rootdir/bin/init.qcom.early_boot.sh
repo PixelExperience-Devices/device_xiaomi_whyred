@@ -333,7 +333,7 @@ esac
 #Since lcd density has read only
 #property, it will not overwrite previous set
 #property if any target is setting forcefully.
-set_density_by_fb
+#set_density_by_fb
 
 
 # set Lilliput LCD density for ADP
