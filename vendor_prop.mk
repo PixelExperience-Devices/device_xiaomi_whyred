@@ -100,6 +100,10 @@ vendor.audio.feature.a2dp_offload.enable=false
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.vendor.bt.aac_frm_ctl.enabled=true
 
+# Codec2 switch
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.media.codec2=2
+
 #Set speaker protection cal tx path sampling rate to 48k
 PRODUCT_PROPERTY_OVERRIDES += \
 vendor.audio.spkr_prot.tx.sampling_rate=48000
