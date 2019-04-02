@@ -1,6 +1,6 @@
 /*
-   Copyright (c) 2015, The Linux Foundation. All rights reserved.
-   Copyright (C) 2016 The CyanogenMod Project.
+   Copyright (c) 2014, The Linux Foundation. All rights reserved.
+
    Redistribution and use in source and binary forms, with or without
    modification, are permitted provided that the following conditions are
    met:
@@ -13,6 +13,7 @@
     * Neither the name of The Linux Foundation nor the names of its
       contributors may be used to endorse or promote products derived
       from this software without specific prior written permission.
+
    THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESS OR IMPLIED
    WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
    MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT
@@ -26,54 +27,37 @@
    IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <fstream>
-#include <unistd.h>
-
-#include <android-base/properties.h>
+#include <stdlib.h>
 #define _REALLY_INCLUDE_SYS__SYSTEM_PROPERTIES_H_
 #include <sys/_system_properties.h>
 
+#include <android-base/properties.h>
 #include "property_service.h"
 #include "vendor_init.h"
 
-using android::base::GetProperty;
 using android::init::property_set;
 
 void property_override(char const prop[], char const value[])
 {
     prop_info *pi;
-     pi = (prop_info*) __system_property_find(prop);
+
+    pi = (prop_info*) __system_property_find(prop);
     if (pi)
         __system_property_update(pi, value, strlen(value));
     else
         __system_property_add(prop, strlen(prop), value, strlen(value));
 }
- void property_override_dual(char const system_prop[],
-        char const vendor_prop[], char const value[])
+
+void property_override_dual(char const system_prop[], char const vendor_prop[],
+    char const value[])
 {
     property_override(system_prop, value);
     property_override(vendor_prop, value);
 }
 
-static void init_setup_model_properties()
-{
-    std::ifstream fin;
-    std::string buf;
-
-    fin.open("/proc/cmdline");
-    while (std::getline(fin, buf, ' '))
-        if (buf.find("androidboot.hwc") != std::string::npos)
-            break;
-    fin.close();
-
-    if (buf.find("CN") != std::string::npos || buf.find("Global") != std::string::npos) {
-        property_override_dual("ro.product.model", "ro.vendor.product.model", "Redmi Note 5");
-    } else {
-        property_override_dual("ro.product.model", "ro.vendor.product.model",  "Redmi Note 5 Pro");
-    }
-}
-
 void vendor_load_properties()
 {
-    init_setup_model_properties();
+    // fingerprint
+    property_override("ro.build.description", "violet-user 9 PKQ1.181203.001 V10.3.9.0.PFHINXM release-keys");
+    property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys");
 }
