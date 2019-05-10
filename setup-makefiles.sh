@@ -29,7 +29,7 @@ if [[ ! -d "$MY_DIR" ]]; then MY_DIR="$PWD"; fi
 
 MK_ROOT="$MY_DIR"/../../..
 
-HELPER="$MK_ROOT"/vendor/mk/build/tools/extract_utils.sh
+HELPER="$MK_ROOT"/vendor/aosp/build/tools/extract_utils.sh
 if [ ! -f "$HELPER" ]; then
     echo "Unable to find helper script at $HELPER"
     exit 1
@@ -43,12 +43,6 @@ setup_vendor "$DEVICE" "$VENDOR" "$MK_ROOT"
 write_headers
 
 write_makefiles "$MY_DIR"/proprietary-files.txt true
-
-cat << EOF >> "$BOARDMK"
-ifeq (\$(WITH_TWRP),true)
-TARGET_RECOVERY_DEVICE_DIRS += vendor/$VENDOR/$DEVICE/proprietary
-endif
-EOF
 
 cat << EOF >> "$ANDROIDMK"
 

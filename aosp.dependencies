@@ -1,0 +1,16 @@
+[
+  {
+    "repository" : "vendor_xiaomi",
+    "target_path": "vendor/xiaomi"
+  },
+  {
+    "repository" : "kernel_xiaomi_whyred",
+    "target_path": "kernel/xiaomi/whyred"
+  },
+  {
+    "repository": "LineageOS/android_packages_resources_devicesettings",
+    "target_path": "packages/resources/devicesettings",
+    "branch": "lineage-16.0",
+    "remote": "github"
+  }
+] 
