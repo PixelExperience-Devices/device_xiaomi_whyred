@@ -252,3 +252,8 @@ persist.vendor.radio.data_con_rprt=1
 
 #lct liuxuan add the dom ignore time
 persist.vendor.radio.ignore_dom_time=15
+
+# IMS
+persist.dbg.ims_volte_enable=1 
+persist.dbg.volte_avail_ovr=1
+persist.dbg.vt_avail_ovr=1
