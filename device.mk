@@ -82,7 +82,6 @@ TARGET_SCREEN_WIDTH := 1080
 
 # Alipay
 PRODUCT_PACKAGES += \
-    IFAAService \
     org.ifaa.android.manager
 
 PRODUCT_BOOT_JARS += \
