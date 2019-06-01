@@ -1052,7 +1052,6 @@ vendor/lib/hw/keystore.sdm660.so
 vendor/lib64/hw/keystore.sdm660.so
 
 # Listen
-vendor/etc/audio.scd
 vendor/lib/hw/sound_trigger.primary.sdm660.so
 vendor/lib/libadpcmdec.so
 vendor/lib/libgcs-calwrapper.so
@@ -1060,15 +1059,11 @@ vendor/lib/libgcs-ipc.so
 vendor/lib/libgcs-osal.so
 vendor/lib/libgcs.so
 vendor/lib/libsmwrapper.so
-vendor/lib/libnwa.so
-vendor/lib/libsse.so
 vendor/lib64/hw/sound_trigger.primary.sdm660.so
 vendor/lib64/libgcs-calwrapper.so
 vendor/lib64/libgcs-ipc.so
 vendor/lib64/libgcs-osal.so
 vendor/lib64/libgcs.so
-vendor/lib64/libnwa.so
-vendor/lib64/libsse.so
 
 # Media
 lib/libmmosal.so
@@ -1180,8 +1175,10 @@ vendor/lib64/vendor.display.color@1.1.so
 vendor/lib64/vendor.display.postproc@1.0.so
 
 # QMI - from MI 8 Lite platina-user 9 PKQ1.181007.001 9.3.28 release-keys
-etc/permissions/qti_permissions.xml
 etc/permissions/qti_libpermissions.xml|ef3c88495f2f61a2d16e1445113a9d80f8db0e0a
+
+# QMI
+etc/permissions/qti_permissions.xml
 vendor/bin/irsc_util
 vendor/bin/pd-mapper
 vendor/lib/libdiag.so
@@ -1346,14 +1343,14 @@ vendor/lib64/vendor.qti.hardware.soter@1.0.so
 vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so
 
 # Thermal
-vendor/etc/thermal-engine-camera.conf
-vendor/etc/thermal-engine-china.conf
-vendor/etc/thermal-engine-high.conf
-vendor/etc/thermal-engine-india.conf
+vendor/etc/thermal-engine-camera.conf|307465877ba1f735e1edcfa5460a9c486102c31b
+vendor/etc/thermal-engine-china.conf|ce43e442955e3c44430f4e2d04bc0f4226045b65
+vendor/etc/thermal-engine-high.conf|b505b043ca22bf526ce465c5560087c9698c23f3
+vendor/etc/thermal-engine-india.conf|88a7129c3576e67bd7ba2d39dc692f64a8d1cf1f
+vendor/etc/thermal-engine-sgame.conf|3841473c2ca415aebb6dae51d9fac10bbd30437a
+vendor/etc/thermal-engine-Youtube.conf|5c853297f77dc4707dc9c8bb75ae1cda416c4905
 vendor/etc/thermal-engine-map.conf
 vendor/etc/thermal-engine-normal.conf
-vendor/etc/thermal-engine-sgame.conf
-vendor/etc/thermal-engine-Youtube.conf
 vendor/bin/thermal-engine
 vendor/lib/libthermalfeature.so
 -vendor/lib/libthermalclient.so
