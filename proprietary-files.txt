@@ -1471,14 +1471,12 @@ vendor/lib64/vendor.qti.hardware.soter@1.0.so
 vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so
 
 # Thermal
-vendor/etc/thermal-engine-camera.conf|307465877ba1f735e1edcfa5460a9c486102c31b
-vendor/etc/thermal-engine-china.conf|ce43e442955e3c44430f4e2d04bc0f4226045b65
-vendor/etc/thermal-engine-high.conf|b505b043ca22bf526ce465c5560087c9698c23f3
-vendor/etc/thermal-engine-india.conf|88a7129c3576e67bd7ba2d39dc692f64a8d1cf1f
-vendor/etc/thermal-engine-sgame.conf|3841473c2ca415aebb6dae51d9fac10bbd30437a
-vendor/etc/thermal-engine-Youtube.conf|5c853297f77dc4707dc9c8bb75ae1cda416c4905
-vendor/etc/thermal-engine-map.conf
-vendor/etc/thermal-engine-normal.conf
+vendor/etc/thermal-engine-camera.conf|e425cae65df62f04686cac8132976167e28ed7e8
+vendor/etc/thermal-engine-sgame.conf|f11b71a9f28d778544080f970702cf15a2a24542
+vendor/etc/thermal-engine-Youtube.conf|17f7fed9462cd677229fe6086765efb8c91b9910
+vendor/etc/thermal-engine-map.conf|34a9c4c05bb7584f8656772bb26e21b9dd15379b
+vendor/etc/thermal-engine-normal.conf|9fadc639d172db9486dc6c162d1cc192d604c5b3
+vendor/etc/thermal-engine-pubgmhd.conf|ea34d546d306501b59ac9194a88e463e234a6651
 vendor/bin/thermal-engine
 vendor/lib/libthermalfeature.so
 -vendor/lib/libthermalclient.so
