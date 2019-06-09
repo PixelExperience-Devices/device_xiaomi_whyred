@@ -41,21 +41,23 @@ vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc
 vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.alarm@1.0.so
 
+# ANT+
+lib/com.qualcomm.qti.ant@1.0.so
+lib64/com.qualcomm.qti.ant@1.0.so
+vendor/lib/com.qualcomm.qti.ant@1.0.so
+vendor/lib64/com.qualcomm.qti.ant@1.0.so
+
 # ANT+ (system) - from enchilada - PKQ1.180716.001
-lib/com.qualcomm.qti.ant@1.0.so|fcd6a7130c480bfe4e4d9cc00702ed8444cddc82
 -lib/libantradio.so|7506f2577f2f1068688b623ca85e432be9c3dac9
-lib64/com.qualcomm.qti.ant@1.0.so|199481b290856fb63f5c5bf6def426b43309becb
 -lib64/libantradio.so|fb958cb68c99c71455f969afdf96225f5110f0df
 
 # ANT+ (vendor) - from Redmi Note 7 lavender-user 9 PKQ1.180904.001 9.2.11 release-keys
-vendor/lib/com.qualcomm.qti.ant@1.0.so|6028cb95d17ee080a3d05bdcff952ddc9aa1f494
 vendor/lib/hw/com.qualcomm.qti.ant@1.0-impl.so|86d7fd231c4c820172e133509dd338f700f1aaf1
-vendor/lib64/com.qualcomm.qti.ant@1.0.so|44294189280e86d95538bc51bdccd87b3f010f27
 vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so|474187a8132aabd45089cacd2f8de9a6d9f449a3
 
 # AptX - from Nokia 7 Plus Onyx_00WW-user 9 PPR1.180610.011 00WW_3_22C release-keys
-lib64/libaptX_encoder.so|22f5749edb5099526788c22708099a7791dd837f
-lib64/libaptXHD_encoder.so|c4ad4d6d7615f7df3ea1a4be5c6dae8a8c8ee8b1
+lib64/libaptX_encoder.so|0cebad28afcf29f931bdc2d24fce2730dc882ecf
+lib64/libaptXHD_encoder.so|90f47f10af28b3ead143200cb4370b847c513127
 
 # Audio
 vendor/firmware/dbmd4_va_fw.bin
@@ -1344,7 +1346,6 @@ vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so
 vendor/etc/thermal-engine.conf
 vendor/etc/thermal-engine-map.conf
 vendor/etc/thermal-engine-normal.conf
-vendor/etc/thermal-engine-sgame.conf
 vendor/bin/thermal-engine
 vendor/lib/libthermalfeature.so
 -vendor/lib/libthermalclient.so
