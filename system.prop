@@ -57,6 +57,8 @@ media.stagefright.enable-scan=true
 mmp.enable.3g2=true
 media.aac_51_output_enabled=true
 mm.enable.smoothstreaming=true
+#codecs:(PARSER_)AAC AC3 AMR_NB AMR_WB ASF AVI DTS FLV 3GP 3G2 MKV MP2PS MP2TS MP3 OGG QCP WAV FLAC AIFF APE DSD
+vendor.mm.enable.qcom_parser=13631487
 persist.mm.enable.prefetch=true
 
 #property to enable narrow search range for video encoding
@@ -83,6 +85,8 @@ persist.timed.enable=true
 
 # system property for maximum number of HFP client connections
 bt.max.hfpclient.connections=1
+#force disable Bluetooth AAC by default
+persist.bt.a2dp.aac_disable=true
 
 # System property for cabl
 ro.qualcomm.cabl=0
@@ -222,6 +226,14 @@ vendor.camera.hal1.packagelist=com.whatsapp,com.intsig.camscanner,com.instagram.
 #set maximum supported adapter voltage
 persist.chg.max_volt_mv=9000
 
+#add for dirac algo tsx 9/12
+persist.dirac.acs.controller=qem
+persist.dirac.acs.storeSettings=1
+persist.dirac.acs.ignore_error=1
+
+#set for xiaomi headset effect
+ro.audio.soundfx.dirac=true
+
 #system prop for Bluetooth SOC type
 vendor.bluetooth.soc=cherokee
 
@@ -247,3 +259,7 @@ persist.vendor.radio.ignore_dom_time=15
 persist.dbg.ims_volte_enable=1 
 persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
+
+#Additional
+persist.power.useautobrightadj=true
+persist.radio.apm_sim_not_pwdn=1
