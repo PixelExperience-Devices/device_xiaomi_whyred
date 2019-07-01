@@ -159,6 +159,9 @@ ro.vendor.at_library=libqti-at.so
 ro.vendor.qti.core_ctl_min_cpu=2
 ro.vendor.qti.core_ctl_max_cpu=4
 
+# Enable B-services
+ro.vendor.qti.sys.fw.bservice_enable=true
+
 #Bringup properties
 persist.vendor.radio.atfwd.start=true
 
