@@ -121,9 +121,6 @@ audio.offload.video=true
 #enable music through deep buffer
 audio.deep_buffer.media=true
 
-#set AudioFlinger client heap size
-ro.af.client_heap_size_kbyte=7168
-
 #system prop for RmNet Data
 persist.data.df.dev_name=rmnet_usb0
 
