@@ -1462,18 +1462,20 @@ vendor/lib64/vendor.qti.hardware.soter@1.0.so
 vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so
 
 # Thermal
-vendor/etc/thermal-engine-camera.conf|e425cae65df62f04686cac8132976167e28ed7e8
-vendor/etc/thermal-engine-sgame.conf|f11b71a9f28d778544080f970702cf15a2a24542
-vendor/etc/thermal-engine-Youtube.conf|17f7fed9462cd677229fe6086765efb8c91b9910
-vendor/etc/thermal-engine-map.conf|34a9c4c05bb7584f8656772bb26e21b9dd15379b
-vendor/etc/thermal-engine-normal.conf|9fadc639d172db9486dc6c162d1cc192d604c5b3
-vendor/etc/thermal-engine-pubgmhd.conf|ea34d546d306501b59ac9194a88e463e234a6651
 vendor/bin/thermal-engine
 vendor/lib/libthermalfeature.so
 -vendor/lib/libthermalclient.so
 vendor/lib64/libthermalfeature.so
 -vendor/lib64/libthermalclient.so
 vendor/lib64/libthermalioctl.so
+
+# Thermal modded files - from srfarias
+vendor/etc/thermal-engine-camera.conf|31e5e78b12ffd48548381264bb606210ba7ed4f1
+vendor/etc/thermal-engine-sgame.conf|ad086a888385ca1395157edb3d57e78b10681c6d
+vendor/etc/thermal-engine-Youtube.conf|06dad77a443f55dc87f8b9a738ac2d28e7ea9a15
+vendor/etc/thermal-engine-map.conf|34a9c4c05bb7584f8656772bb26e21b9dd15379b
+vendor/etc/thermal-engine-normal.conf|1ce9d3ed8ae0ed6884272da2ded66ebfead98dea
+vendor/etc/thermal-engine-pubgmhd.conf|e09edc6a5a7c7dc4c00468c4285e391e4091f669
 
 # Time services - from LA.UM.7.2.r1-06900-sdm660.0
 -vendor/app/TimeService/TimeService.apk|693a68e35a2cbc40d23b291fcc836c8567f90b14
