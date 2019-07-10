@@ -138,6 +138,7 @@
         <device name="SND_DEVICE_IN_CAMCORDER_TMIC_FAR_END" acdb_id="599"/>
         <device name="SND_DEVICE_IN_CAMCORDER_TMIC_NEAR_END" acdb_id="1111"/>
         <device name="SND_DEVICE_IN_VOICE_USB_HEADSET_MIC" acdb_id="357"/>
+        <device name="SND_DEVICE_OUT_AFE_PROXY" acdb_id="10"/>
     </acdb_ids>
     <backend_names>
         <device name="SND_DEVICE_OUT_HEADPHONES" backend="headphones" interface="INT0_MI2S_RX"/>
