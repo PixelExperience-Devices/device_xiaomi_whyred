@@ -75,10 +75,6 @@ vendor/lib/libaudioparsers.so
 vendor/lib/libdrc.so
 vendor/lib/libqtigef.so
 vendor/lib/libsurround_3mic_proc.so
-vendor/lib/soundfx/libasphere.so
-vendor/lib/soundfx/libqcbassboost.so
-vendor/lib/soundfx/libqcreverb.so
-vendor/lib/soundfx/libqcvirt.so
 vendor/lib64/libacdb-fts.so
 vendor/lib64/libacdbloader.so
 vendor/lib64/libacdbrtac.so
@@ -87,9 +83,6 @@ vendor/lib64/libaudcal.so
 vendor/lib64/libaudioalsa.so
 vendor/lib64/libaudioparsers.so
 vendor/lib64/libqtigef.so
-vendor/lib64/soundfx/libasphere.so
-vendor/lib64/soundfx/libqcbassboost.so
-vendor/lib64/soundfx/libqcvirt.so
 
 # Audio ACDB
 vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb
@@ -820,6 +813,17 @@ vendor/lib64/hw/consumerir.default.so
 vendor/lib/soundfx/libdirac.so|f63826a905b520fa524e4c1b147be7cf65240953
 vendor/lib/libDiracAPI_SHARED.so|42b49679d38eca93fead05ea06ddbdc8108fd4b1
 vendor/etc/diracmobile.config|d781cd6798a7481a8f7128d144abfb2b8794212d
+
+# Audio FX modules - from perseus-user 9 PKQ1.180729.001 V10.3.1.0.PEECNXM release-keys
+vendor/lib/soundfx/libasphere.so|0783283ac9f68d5ebbeef350adc9b66b3248449b
+vendor/lib/soundfx/libmisoundfx.so|569ee2df586e95116b79cfb3d89429f2032a7a76
+vendor/lib/soundfx/libqcbassboost.so|1722ba76b9e6922fca17ce9f538d71b3ae37d78e
+vendor/lib/soundfx/libqcreverb.so|fa8a59cc8dc376ba8903104ac36707e576280c24
+vendor/lib/soundfx/libqcvirt.so|c373619e800e379d3bc88bee9dacf80a87a4e0ca
+vendor/lib64/soundfx/libasphere.so|718aa55bf9a32cb77a6f5e8f33e776d30e2dadc9
+vendor/lib64/soundfx/libqcbassboost.so|1f9b4eca3f6b1fea872d90b943d2c434e25e0fa4
+vendor/lib64/soundfx/libqcreverb.so|d8ce60a46a0d20e21d3246742e08328606ddf960
+vendor/lib64/soundfx/libqcvirt.so|88349315d99cea68a3b766fa4c6e1181d26f561b
 
 # Display calibration
 vendor/etc/qdcm_calib_data_huaxing_nt36672_fhd_video_mode_dsi_panel.xml
