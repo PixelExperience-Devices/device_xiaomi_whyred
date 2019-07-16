@@ -104,6 +104,11 @@ persist.vendor.bt.aac_frm_ctl.enabled=true
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.media.codec2=2
 
+# Media
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.stagefright.omx_default_rank.sw-audio=1 \
+    debug.stagefright.omx_default_rank=0
+
 #Set speaker protection cal tx path sampling rate to 48k
 PRODUCT_PROPERTY_OVERRIDES += \
 vendor.audio.spkr_prot.tx.sampling_rate=48000
