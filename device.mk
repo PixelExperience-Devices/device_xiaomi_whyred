@@ -94,12 +94,17 @@ PRODUCT_PACKAGES += \
     android.hardware.audio@4.0-impl:32 \
     android.hardware.audio@2.0-service \
     android.hardware.audio.effect@4.0-impl:32 \
+    android.hardware.audio.effect@2.0-service \
     android.hardware.soundtrigger@2.1-impl:32 \
+    android.hardware.soundtrigger@2.1-service \
+    android.hardware.audio@4.0 \
+    android.hardware.audio.common@4.0 \
+    android.hardware.audio.common@4.0-util \
     audio.a2dp.default \
     audio.primary.sdm660 \
     audio.r_submix.default \
     audio.usb.default \
-    libaacwrapper \
+    audiod \
     libaudio-resampler \
     libqcompostprocbundle \
     libqcomvisualizer \
@@ -448,5 +453,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini
 
 # Wi-Fi Display
+PRODUCT_PACKAGES += \
+    libaacwrapper
+
 PRODUCT_BOOT_JARS += \
     WfdCommon
