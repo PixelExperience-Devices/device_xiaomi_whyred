@@ -1,5 +1,5 @@
-# 
-# Copyright (C) 2018 The Mokee Project
+#
+# Copyright (C) 2017-2019 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -23,9 +23,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_n_mr1.mk
 $(call inherit-product, device/xiaomi/whyred/device.mk)
 
 # Inherit some common Mokee stuff.
-$(call inherit-product, vendor/mk/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-PRODUCT_NAME := mk_whyred
+PRODUCT_NAME := lineage_whyred
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := whyred
 PRODUCT_MANUFACTURER := Xiaomi

@@ -1,0 +1,5 @@
+import /init.recovery.qcom.usb.rc
+
+on fs
+    wait /dev/block/platform/soc/c0c4000.sdhci
+    symlink /dev/block/platform/soc/c0c4000.sdhci /dev/block/bootdevice

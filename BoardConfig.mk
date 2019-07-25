@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2018 The Mokee Project
+# Copyright (C) 2017-2019 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -209,7 +209,9 @@ TARGET_COPY_OUT_VENDOR := vendor
 TARGET_USES_INTERACTION_BOOST := true
 
 # Recovery
-TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/recovery.fstab
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
+TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
+TARGET_RECOVERY_UI_BLANK_UNBLANK_ON_INIT := true
 
 # Releasetools
 TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_whyred
