@@ -41,6 +41,12 @@ vendor.display.disable_skip_validate=1
 
 debug.sf.disable_backpressure
 
+# ART
+dalvik.vm.image-dex2oat-filter=speed
+ro.vendor.qti.am.reschedule_service=true
+dalvik.vm.boot-dex2oat-threads=8
+dalvik.vm.dex2oat-threads=8
+
 #ro.hdmi.enable=true
 #
 # system props for the cne module
