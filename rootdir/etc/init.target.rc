@@ -68,6 +68,7 @@ on fs
 
 on post-fs
     start vendor.qseecomd
+    exec - system system -- /vendor/bin/init.qti.qseecomd.sh
     write /dev/ipa 1
 
     # We chown/chmod /cust again so because mount is run as root + defaults
@@ -95,6 +96,8 @@ on post-fs-data
     mkdir /data/vendor/thermal/config 0771 root system
 
 on boot
+    start rmt_storage
+    start rfs_access
     write /dev/cpuset/top-app/cpus 0-7
     write /dev/cpuset/foreground/cpus 0-7
     write /dev/cpuset/background/cpus 0-7
@@ -127,15 +130,7 @@ on boot
     # Touchscreen
     chown system system /sys/class/input/input2/wake_gesture
 
-    #add for display feature
-    chown system system /sys/class/graphics/fb0/msm_fb_ce
-    chown system system /sys/class/graphics/fb0/msm_fb_cabc
-    chown system system /sys/class/graphics/fb0/msm_fb_srgb
-    chown system system /sys/class/graphics/fb0/msm_fb_gamma
-    chown system system /sys/class/graphics/fb0/msm_fb_cabc_movie
-    chown system system /sys/class/graphics/fb0/msm_fb_cabc_still
-    chown system system /sys/class/graphics/fb0/msm_fb_hbm
-
+    # Wifi firmware reload path
     chown wifi wifi /sys/module/wlan/parameters/fwpath
 
 #USB controller configuration
@@ -166,6 +161,12 @@ on property:sys.shutdown.requested=*
     stop vendor.per_proxy
     stop vendor.ims_rtp_daemon
 
+on property:sys.thermallct.isincall=1
+    write /sys/class/power_supply/battery/device/thermalcall 1
+
+on property:sys.thermallct.isincall=0
+    write /sys/class/power_supply/battery/device/thermalcall 0
+
 on property:vendor.camera.thermal_lc=12
     write /sys/class/thermal/thermal_message/sconfig 12
 
@@ -186,12 +187,28 @@ service thermal-engine /system/vendor/bin/thermal-engine -c ${sys.qcom.thermalcf
     socket thermal-send-rule stream 0660 system system
     group root
 
+service adsprpcd_root /vendor/bin/adsprpcd
+   class main
+   user media
+   group media
+   writepid /dev/cpuset/system-background/tasks
 
 service adsprpcd /vendor/bin/adsprpcd audiopd
     class main
     user media
     group media
     writepid /dev/cpuset/system-background/tasks
+
+service audiod /system/vendor/bin/audiod
+   class late_start
+   user system
+   group system
+
+service vendor.cdsprpcd /vendor/bin/cdsprpcd
+   class main
+   user system
+   group system
+   disabled
 
 ## imsdatadaemon starts with root and UID will be downgraded to SYSTEM.
 service vendor.imsqmidaemon /system/vendor/bin/imsqmidaemon
@@ -262,9 +279,6 @@ on property:init.svc.zygote=running
 
 on property:init.svc.zygote=restarting
     stop ppd
-
-on property:sys.boot_completed=1
-    setprop sys.io.scheduler "bfq"
 
 on charger
     start qcom-post-boot
