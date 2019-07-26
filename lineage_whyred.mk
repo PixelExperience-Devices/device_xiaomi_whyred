@@ -39,12 +39,13 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE="whyred" \
     PRODUCT_NAME="whyred" \
-    PRIVATE_BUILD_DESC="whyred-user 9 PKQ1.180904.001 9.4.25 release-keys"
+    PRIVATE_BUILD_DESC="whyred-user 9 PKQ1.180904.001 9.7.25 release-keys"
 
-BUILD_FINGERPRINT := "xiaomi/whyred/whyred:9/PKQ1.180904.001/9.4.25:user/release-keys"
+BUILD_FINGERPRINT := "xiaomi/whyred/whyred:9/PKQ1.180904.001/9.7.25:user/release-keys"
 
 TARGET_VENDOR := Xiaomi
 
 # OTA
 PRODUCT_PROPERTY_OVERRIDES += \
     lineage.updater.uri=https://raw.githubusercontent.com/xiaomeme-whyred/OTA/master/lineage.json
+
