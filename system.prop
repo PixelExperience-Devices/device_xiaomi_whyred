@@ -22,6 +22,9 @@ DEVICE_PROVISIONED=1
 #
 ro.telephony.default_network=22,20
 
+# Make data selection stick in dual SIM devices
+persist.radio.aosp_usr_pref_sel=true
+
 debug.sf.enable_hwc_vds=1
 debug.sf.early_app_phase_offset_ns=1500000
 debug.sf.early_gl_phase_offset_ns=3000000
