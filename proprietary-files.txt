@@ -1137,24 +1137,25 @@ vendor/lib64/libmlipay.so|00643f75ce0646577a3b2713579dffcb6acd9584
 vendor/lib64/vendor.xiaomi.hardware.mlipay@1.0.so|c90f47cc012a338c4f334e6f8c2b3e50dbf2ef40
 vendor/lib64/vendor.xiaomi.hardware.mlipay@1.1.so|4611f408f9bf230594533103e61456ebdc075a32
 
-# Perf
-vendor/bin/energy-awareness
-vendor/bin/msm_irqbalance
-vendor/bin/hw/vendor.qti.hardware.perf@1.0-service
-vendor/etc/init/vendor.qti.hardware.perf@1.0-service.rc
-vendor/etc/perf/commonresourceconfigs.xml
-vendor/etc/perf/perfboostsconfig.xml
-vendor/etc/perf/targetconfig.xml
-vendor/etc/perf/targetresourceconfigs.xml
-vendor/lib/libqti-perfd-client.so
-vendor/lib/libqti-perfd.so
-vendor/lib/libqti-util.so
-vendor/lib/vendor.qti.hardware.perf@1.0.so
-vendor/lib64/libperfgluelayer.so
-vendor/lib64/libqti-perfd-client.so
-vendor/lib64/libqti-perfd.so
-vendor/lib64/libqti-util.so
-vendor/lib64/vendor.qti.hardware.perf@1.0.so
+# Perf - from LA.UM.7.2.r1-06900-sdm660.0
+vendor/bin/energy-awareness|c1ad0ec1e4171b59f166e580ef8ce7395ccb41a5
+vendor/bin/hw/vendor.qti.hardware.perf@1.0-service|f7cbecab5e467690575c4846c54a951932dae123
+vendor/bin/msm_irqbalance|117d7c8a8f6f12b3615ec8ab676231df93d277f1
+vendor/etc/init/vendor.qti.hardware.perf@1.0-service.rc|b06477c0943e543d58a71550b544160d28b9b9d0
+vendor/etc/perf/commonresourceconfigs.xml|7bf6b442875ec6244db05ffcc2ebb85a1c370863
+vendor/etc/perf/perfboostsconfig.xml|0ef809551a9f33d7a2a6a2fbdb0ed4a6f4c3a20e
+vendor/etc/perf/targetconfig.xml|376ae331df9d6c30b6208f25d04ae4ea11c0e2ea
+vendor/etc/perf/targetresourceconfigs.xml|7132f1e9ce3bb21b4854b81d6e5d24409251f177
+vendor/lib/libperfgluelayer.so|a88084be00012bbe9a323fe2823eee250c55a0bb
+vendor/lib/libqti-perfd-client.so|85ebe15611a5153a70fb48cce5ddd28ebdd5701c
+vendor/lib/libqti-perfd.so|bc50f73c1037728f54a47c01a0aef58499bd09cf
+vendor/lib/libqti-util.so|c2263219ce71773cc5a74d28d8854cc98e569004
+vendor/lib/vendor.qti.hardware.perf@1.0.so|824d9d0b18280c886996492ffea71d180a088cc0
+vendor/lib64/libperfgluelayer.so|f97bc3383e3bdc39738b7c1f85805771dbfb6c97
+vendor/lib64/libqti-perfd-client.so|974abf576e3cbb13774671f8a80be5705063e5c2
+vendor/lib64/libqti-perfd.so|279a82bfcdfb30c9991dfda44ee923ee9d4c3eca
+vendor/lib64/libqti-util.so|98bbc3a80fee315fe7de34f0ed5b2ec3042b8d58
+vendor/lib64/vendor.qti.hardware.perf@1.0.so|54ef4b7c6942e343b83e5837f3af9fc04cc97ce0
 
 # Peripheral manager
 vendor/bin/pm-proxy
