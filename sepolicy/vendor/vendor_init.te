@@ -1,4 +1,6 @@
 #============= vendor_init ==============
+dontaudit  vendor_init system_data_file:dir { add_name create setattr write };
+allow vendor_init system_file:dir { open read };
 allow vendor_init rootfs:dir { add_name create setattr write };
 allow vendor_init persist_debug_prop:property_service set;
 allow vendor_init persist_dpm_prop:property_service set;
