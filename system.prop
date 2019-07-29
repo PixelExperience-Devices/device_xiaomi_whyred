@@ -191,6 +191,9 @@ ro.vendor.sensors.mot_detect=true
 #enable pickup gesture
 ro.vendor.sensors.pug=true
 
+# Proximity
+gsm.proximity.enable=true
+
 #Expose aux camera for below packages
 camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.qualcomm.qti.qmmi
 vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.qualcomm.qti.qmmi,com.longcheertel.cit
