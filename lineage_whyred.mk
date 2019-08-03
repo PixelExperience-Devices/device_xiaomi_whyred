@@ -39,9 +39,9 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE="whyred" \
     PRODUCT_NAME="whyred" \
-    PRIVATE_BUILD_DESC="whyred-user 9 PKQ1.180904.001 9.7.25 release-keys"
+    PRIVATE_BUILD_DESC="whyred-user 9 PKQ1.180904.001 9.8.1 release-keys"
 
-BUILD_FINGERPRINT := "xiaomi/whyred/whyred:9/PKQ1.180904.001/9.7.25:user/release-keys"
+BUILD_FINGERPRINT := "xiaomi/whyred/whyred:9/PKQ1.180904.001/9.8.1:user/release-keys"
 
 TARGET_VENDOR := Xiaomi
 
