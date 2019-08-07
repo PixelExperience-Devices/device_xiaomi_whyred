@@ -21,13 +21,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.frp.pst=/dev/block/bootdevice/by-name/frp \
     ro.opengles.version=196610 \
     vendor.qcom.bluetooth.soc=cherokee \
+
+PRODUCT_PROPERTY_OVERRIDES += \
     af.fast_track_multiplier=1 \
     vendor.audio_hal.period_size=192 \
     ro.vendor.audio.sdk.fluencetype=fluence \
     persist.vendor.audio.fluence.voicecall=true \
-    persist.vendor.audio.fluence.voicerec=true \
+    persist.vendor.audio.fluence.voicerec=false \
     persist.vendor.audio.fluence.speaker=true \
-    persist.vendor.audio.fluence.audiorec=true \
     vendor.audio.tunnel.encode=false \
     persist.vendor.audio.ras.enabled=false \
     vendor.audio.offload.buffer.size.kb=64 \
@@ -61,15 +62,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.audio.soundtrigger.lowpower=false \
     ro.vendor.sensors.facing=false \
     ro.vendor.sensors.cmc=false \
-    ro.vendor.sdk.sensors.gestures=false
-
-#Set AudioFlinger client heap size
-PRODUCT_PROPERTY_OVERRIDES += \
+    ro.vendor.sdk.sensors.gestures=false \
     vendor.audio_hal.in_period_size=144 \
     vendor.audio_hal.period_multiplier=3 \
-    vendor.audio.adm.buffering.ms=2
-
-PRODUCT_PROPERTY_OVERRIDES += \
+    vendor.audio.adm.buffering.ms=2 \
     persist.vendor.audio.hw.binder.size_kbyte=1024
 
 PRODUCT_PROPERTY_OVERRIDES += \
