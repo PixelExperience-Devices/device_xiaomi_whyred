@@ -1338,16 +1338,18 @@ vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc
 vendor/lib64/vendor.qti.hardware.soter@1.0.so
 vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so
 
-# Thermal
-vendor/etc/thermal-engine-map.conf
-vendor/etc/thermal-engine-normal.conf
-vendor/etc/thermal-engine-sgame.conf
-vendor/bin/thermal-engine
-vendor/lib/libthermalfeature.so
--vendor/lib/libthermalclient.so
-vendor/lib64/libthermalfeature.so
--vendor/lib64/libthermalclient.so
-vendor/lib64/libthermalioctl.so
+# Thermal - from platina-user 9 PKQ1.181007.001 9.7.11 release-keys
+vendor/etc/thermal-engine-sdm660.conf|e7e088b0e4bd8ec1f504201f13db0919420c8c2a
+vendor/etc/thermal-engine-sdm660-camera.conf|11509a72c34dc86c1c935f4a4361879e75aa0ff9
+vendor/etc/thermal-engine-sdm660-high.conf|91d5fa102a023b3e4898c26e437a86763e040b8c
+vendor/etc/thermal-engine-sdm660-map.conf|b3b23e4a7c1692afc8b6da09529bab76a0c9ac15
+vendor/etc/thermal-engine-sdm660-nolimits.conf|3dc0b2d17ca8d717ee36faaf2cc481e1c56efee5
+vendor/etc/thermal-engine-sdm660-pubgmhd.conf|e93ac9161da581cffa1159152958df4ecdee4d1f
+vendor/etc/thermal-engine-sdm660-sgame.conf|061e6f9c350ba365fd9e2839782e2cee5ff3dcc8
+vendor/bin/thermal-engine|8837f68c8c629ede72b9e1c8cb1b6ff946d5e234
+-vendor/lib/libthermalclient.so|5d9d2c4281638eaadda4e68b92065cc7ce81613c
+-vendor/lib64/libthermalclient.so|46324e6e3a57ca73e73c0f4ac8864135a265643c
+vendor/lib64/libthermalioctl.so|de12664badf4c1be3a2090043d4a25f45ccbef7b
 
 # Time services - from Redmi K20 V10.3.6.0.PFJCNXM
 -vendor/app/TimeService/TimeService.apk|3c9e8763b1b81e71b378eb735eee8c6f657a26d4
