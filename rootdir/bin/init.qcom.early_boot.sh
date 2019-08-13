@@ -329,13 +329,6 @@ case "$baseband" in
         setprop persist.vendor.radio.atfwd.start true;;
 esac
 
-#set default lcd density
-#Since lcd density has read only
-#property, it will not overwrite previous set
-#property if any target is setting forcefully.
-set_density_by_fb
-
-
 # set Lilliput LCD density for ADP
 product=`getprop ro.build.product`
 
