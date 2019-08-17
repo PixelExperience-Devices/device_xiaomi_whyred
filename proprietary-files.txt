@@ -1143,12 +1143,12 @@ vendor/etc/perf/perfboostsconfig.xml|7248adbdc798164bd721560b4e7e25b65c83cce1
 vendor/etc/perf/targetconfig.xml|376ae331df9d6c30b6208f25d04ae4ea11c0e2ea
 vendor/etc/perf/targetresourceconfigs.xml|7132f1e9ce3bb21b4854b81d6e5d24409251f177
 vendor/lib/libperfgluelayer.so|a88084be00012bbe9a323fe2823eee250c55a0bb
-vendor/lib/libqti-perfd-client.so|85ebe15611a5153a70fb48cce5ddd28ebdd5701c
+vendor/lib/libqti-perfd-client.so|21032584f71cbf86eeac97b5a2f86bcac7dc8bd7
 vendor/lib/libqti-perfd.so|bc50f73c1037728f54a47c01a0aef58499bd09cf
 vendor/lib/libqti-util.so|c2263219ce71773cc5a74d28d8854cc98e569004
 vendor/lib/vendor.qti.hardware.perf@1.0.so|824d9d0b18280c886996492ffea71d180a088cc0
 vendor/lib64/libperfgluelayer.so|f97bc3383e3bdc39738b7c1f85805771dbfb6c97
-vendor/lib64/libqti-perfd-client.so|974abf576e3cbb13774671f8a80be5705063e5c2
+vendor/lib64/libqti-perfd-client.so|effa93a6d45ce57ef798aba098529b9b7e6ce3a9
 vendor/lib64/libqti-perfd.so|279a82bfcdfb30c9991dfda44ee923ee9d4c3eca
 vendor/lib64/libqti-util.so|98bbc3a80fee315fe7de34f0ed5b2ec3042b8d58
 vendor/lib64/vendor.qti.hardware.perf@1.0.so|54ef4b7c6942e343b83e5837f3af9fc04cc97ce0
@@ -1172,9 +1172,11 @@ vendor/lib64/vendor.display.color@1.1.so
 vendor/lib64/vendor.display.color@1.2.so
 vendor/lib64/vendor.display.postproc@1.0.so
 
-# QMI - from MI 8 Lite platina-user 9 PKQ1.181007.001 9.3.28 release-keys
-etc/permissions/qti_permissions.xml
+# QMI Permissions - from MI 8 Lite platina-user 9 PKQ1.181007.001 9.3.28 release-keys
 etc/permissions/qti_libpermissions.xml|ef3c88495f2f61a2d16e1445113a9d80f8db0e0a
+
+# QMI
+etc/permissions/qti_permissions.xml
 vendor/bin/irsc_util
 vendor/bin/pd-mapper
 vendor/lib/libdiag.so
