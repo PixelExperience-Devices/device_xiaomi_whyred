@@ -48,9 +48,6 @@ vendor.display.disable_skip_validate=1
 
 debug.sf.disable_backpressure=1
 
-# Sched
-sys.use_fifo_ui=1
-
 # Disable buffer age (b/74534157)
 debug.hwui.use_buffer_age=false
 
