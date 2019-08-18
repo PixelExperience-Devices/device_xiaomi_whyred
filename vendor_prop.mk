@@ -109,6 +109,15 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.stagefright.omx_default_rank.sw-audio=1 \
     debug.stagefright.omx_default_rank=0
 
+# Rendering
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.enable.sglscale=1 \
+    debug.egl.hw=1 \
+    debug.sf.disable_hwc=0 \
+    debug.sf.recomputecrop=0 \
+    persist.hwc.ptor.enable=true \
+    debug.sf.gpu_comp_tiling=1
+
 #Set speaker protection cal tx path sampling rate to 48k
 PRODUCT_PROPERTY_OVERRIDES += \
 vendor.audio.spkr_prot.tx.sampling_rate=48000
