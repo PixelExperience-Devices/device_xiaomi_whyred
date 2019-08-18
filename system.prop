@@ -36,6 +36,7 @@ debug.gralloc.enable_fb_ubwc=1
 dalvik.vm.heapsize=36m
 dev.pm.dyn_samplingrate=1
 persist.demo.hdmirotationlock=false
+
 #Disable Skip Validate
 sdm.debug.disable_skip_validate=1
 
@@ -50,6 +51,14 @@ debug.sf.disable_backpressure=1
 
 # Disable buffer age (b/74534157)
 debug.hwui.use_buffer_age=false
+
+# Properties to improve rendering
+debug.enable.sglscale=1
+debug.egl.hw=1
+debug.sf.disable_hwc=0
+debug.sf.recomputecrop=0
+persist.hwc.ptor.enable=true
+debug.sf.gpu_comp_tiling=1
 
 # ART
 dalvik.vm.image-dex2oat-filter=speed
