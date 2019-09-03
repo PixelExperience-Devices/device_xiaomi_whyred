@@ -250,11 +250,6 @@ BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
 PRODUCT_FULL_TREBLE_OVERRIDE := true
 PRODUCT_VENDOR_MOVE_ENABLED := true
 
-# TWRP Support
-ifeq ($(WITH_TWRP),true)
--include $(DEVICE_PATH)/twrp.mk
-endif
-
 # Vendor init
 TARGET_INIT_VENDOR_LIB := libinit_whyred
 TARGET_RECOVERY_DEVICE_MODULES := libinit_whyred
