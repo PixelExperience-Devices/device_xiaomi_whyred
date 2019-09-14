@@ -66,4 +66,11 @@ setup_vendor "${DEVICE}" "${VENDOR}" "${LINEAGE_ROOT}" false "${CLEAN_VENDOR}"
 extract "${MY_DIR}/proprietary-files.txt" "${SRC}" \
         "${KANG}" --section "${SECTION}"
 
+sed -i 's/libicuuc.so/libicuuq.so/g' "$BLOB_ROOT"/vendor/lib/libicuuq.so
+sed -i 's/libicuuc.so/libicuuq.so/g' "$BLOB_ROOT"/vendor/lib/libMiCameraHal.so
+sed -i 's/libminikin.so/libminikiq.so/g' "$BLOB_ROOT"/vendor/lib/libMiCameraHal.so
+sed -i 's/libminikin.so/libminikiq.so/g' "$BLOB_ROOT"/vendor/lib/libMiCameraHal.so
+sed -i 's/libui.so/libuq.so/g' "$BLOB_ROOT"/vendor/lib/hw/camera.sdm660.so
+sed -i 's/libui.so/libuq.so/g' "$BLOB_ROOT"/vendor/lib/hw/camera.sdm660.so
+
 "${MY_DIR}/setup-makefiles.sh"
