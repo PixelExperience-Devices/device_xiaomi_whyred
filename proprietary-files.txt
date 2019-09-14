@@ -817,8 +817,8 @@ vendor/lib64/vendor.qti.data.factory@1.1.so|86d111f7b1853dfda37631ab71bd1b8e9b38
 vendor/lib64/vendor.qti.latency@2.0.so|5cba21a7326fdf0e827f69fefb4407cf8a887327
 
 # Consumerir
-vendor/lib/hw/consumerir.default.so
-vendor/lib64/hw/consumerir.default.so
+vendor/lib/hw/consumerir.default.so:vendor/lib/hw/consumerir.sdm660.so
+vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.sdm660.so
 
 # Display calibration
 vendor/etc/qdcm_calib_data_huaxing_nt36672_fhd_video_mode_dsi_panel.xml
@@ -899,7 +899,7 @@ vendor/bin/qfp-daemon
 vendor/etc/permissions/com.fingerprints.extension.xml
 vendor/framework/com.fingerprints.extension.jar
 vendor/lib/vendor.qti.hardware.fingerprint@1.0.so
-vendor/lib64/hw/fingerprint.default.so
+vendor/lib64/hw/fingerprint.default.so:vendor/lib64/hw/fingerprint.sdm660.so
 vendor/lib64/hw/fingerprint.fpc.default.so
 vendor/lib64/hw/fingerprint.goodix.default.so
 vendor/lib64/com.fingerprints.extension@1.0.so
