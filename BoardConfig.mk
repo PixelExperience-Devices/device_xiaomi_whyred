@@ -247,7 +247,7 @@ PRODUCT_FULL_TREBLE_OVERRIDE := true
 PRODUCT_VENDOR_MOVE_ENABLED := true
 
 # Vendor init
-TARGET_INIT_VENDOR_LIB := libinit_whyred
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_whyred
 TARGET_RECOVERY_DEVICE_MODULES := libinit_whyred
 
 # Wifi
