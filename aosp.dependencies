@@ -2,8 +2,7 @@
   {
     "repository" : "vendor_xiaomi",
     "target_path": "vendor/xiaomi",
-    "branch": "pie",
-    "remote": "pixel-gitlab"
+    "branch": "pie"
   },
   {
     "repository" : "kernel_xiaomi_whyred",
