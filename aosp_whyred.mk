@@ -26,7 +26,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 $(call inherit-product, device/xiaomi/whyred/device.mk)
 
 # Inherit from custom vendor
-$(call inherit-product, vendor/MiuiCamera/config.mk)
+#$(call inherit-product, vendor/MiuiCamera/config.mk)
 
 # Inherit some common PixelExperience stuff.
 TARGET_BOOT_ANIMATION_RES := 1080
