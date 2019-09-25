@@ -2,11 +2,12 @@
   {
     "repository" : "vendor_xiaomi",
     "target_path": "vendor/xiaomi",
-    "branch": "pie"
+    "branch": "ten"
   },
   {
     "repository" : "kernel_xiaomi_whyred",
-    "target_path": "kernel/xiaomi/whyred"
+    "target_path": "kernel/xiaomi/whyred",
+    "branch": "ten"
   },
   {
     "repository": "LineageOS/android_packages_resources_devicesettings",
@@ -17,6 +18,6 @@
   {
     "repository": "vendor_MiuiCamera",
     "target_path": "vendor/MiuiCamera",
-    "branch": "pie-whyred"
+    "branch": "ten-whyred"
   }
 ] 
