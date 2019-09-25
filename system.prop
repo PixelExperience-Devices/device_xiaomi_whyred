@@ -156,7 +156,7 @@ persist.radio.VT_CAM_INTERFACE=2
 persist.vendor.qti.telephony.vt_cam_interface=1
 
 #property to enable user to access Google WFD settings
-persist.debug.wfd.enable=1
+#persist.debug.wfd.enable=1
 #Enable stm-events
 persist.debug.coresight.config=stm-events
 ##property to choose between virtual/external wfd display
