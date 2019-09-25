@@ -957,7 +957,6 @@ vendor/lib64/libevent_observer.so|19951e3a0c43656dce41bf56e4fea8a11d91054f
 vendor/lib64/libflp.so|f904d548f6f730718a3b400e2fab0963c81bf943
 vendor/lib64/libgdtap.so|5ea671ad041ce4d885fb54585cb73c4f5feb5a00
 vendor/lib64/libgeofence.so|985a162c802ef6783eb5bf467640a9eaacbe50f3
-vendor/lib64/libgps.utils.so|fb0cfc42f7349777460541eb4fbeac02e1ebb241
 vendor/lib64/libizat_client_api.so|d74e88b73480b91dc55dee6749db9203a46736a1
 vendor/lib64/libizat_core.so|50b4f9f87cbe9b03ea639ade8c3c19631c9e984a
 vendor/lib64/liblbs_core.so|7ae46513faea7c6807dd1427bc44898daa3e24d9
