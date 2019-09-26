@@ -825,6 +825,14 @@ vendor/lib64/vendor.qti.hardware.data.latency@1.0.so|9868d96d363acb9fdfd8cafd207
 vendor/lib64/vendor.qti.hardware.data.qmi@1.0.so|52600ab00087c5ee2be399cdcca9b797534ef6c0
 vendor/lib64/vendor.qti.latency@2.0.so|531cfa663cacf0aee1daaeb3bb8e935cd561cb19
 
+# CNE - from LA.UM.7.2.r1-06900-sdm660.0
+-vendor/lib64/com.quicinc.cne.server@2.0.so|399ded8dcee279ac78f9d29db697dc3f3d743e62
+-vendor/lib64/com.quicinc.cne.server@2.1.so|4d209a98982b2573796f2ecf98023f2313fd5f92
+-vendor/lib64/com.quicinc.cne.server@2.2.so|44172007c09a423bed80101c816eaa9006d8fad9
+-vendor/lib64/com.quicinc.cne.server@2.3.so|5ddd48f9c45c7842f544fa1f98def3e004b2361d
+vendor/lib64/vendor.qti.data.factory@1.0.so|d4c36cef86fe3adc75bc31e9258bce35e1b42dbe
+vendor/lib64/vendor.qti.data.factory@1.1.so|86d111f7b1853dfda37631ab71bd1b8e9b383649
+
 # Consumerir
 vendor/lib/hw/consumerir.default.so:vendor/lib/hw/consumerir.sdm660.so
 vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.sdm660.so
