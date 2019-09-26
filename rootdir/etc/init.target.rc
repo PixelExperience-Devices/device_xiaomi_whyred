@@ -68,12 +68,6 @@ on post-fs
     start vendor.qseecomd
     write /dev/ipa 1
 
-    # We chown/chmod /cust again so because mount is run as root + defaults
-    chown system system /cust
-    chmod 0771 /cust
-    # We restorecon /cust in case the cust partition has been reset.
-    restorecon_recursive /cust
-
     # create the lost+found directories, so as to enforce our permissions
     mkdir /cust/lost+found 0770 root root
 
