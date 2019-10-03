@@ -2136,6 +2136,10 @@
 	<ctl name="IIR1 INP1 Volume" value="80" />
 	<ctl name="IIR1 INP2 Volume" value="80" />
     </path>
+    
+    <path name="headphones-hifi-filter">
+        <path name="headphones" />
+    </path>
 
     <path name="true-native-mode">
     </path>
@@ -2201,6 +2205,11 @@
     </path>
 
     <path name="speaker-and-headphones">
+        <path name="headphones" />
+        <path name="speaker" />
+    </path>
+    
+    <path name="speaker-and-headphones-hifi-filter">
         <path name="headphones" />
         <path name="speaker" />
     </path>
