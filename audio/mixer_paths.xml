@@ -351,11 +351,11 @@
     <ctl name="EAR PA Gain" value="POS_1P5_DB" />
     <ctl name="EAR PA Boost" value="ENABLE" />
 
-    <ctl name="RX1 Digital Volume" value="84" />
-    <ctl name="RX2 Digital Volume" value="84" />
-    <ctl name="RX3 Digital Volume" value="84" />
-    <ctl name="RX4 Digital Volume" value="84" />
-    <ctl name="RX5 Digital Volume" value="84" />
+    <ctl name="RX1 Digital Volume" value="93" />
+    <ctl name="RX2 Digital Volume" value="93" />
+    <ctl name="RX3 Digital Volume" value="93" />
+    <ctl name="RX4 Digital Volume" value="93" />
+    <ctl name="RX5 Digital Volume" value="93" />
     <ctl name="ADC1 Volume" value="4" />
     <ctl name="ADC2 Volume" value="4" />
     <ctl name="ADC3 Volume" value="4" />
@@ -380,7 +380,7 @@
     <ctl name="RDAC2 MUX" value="ZERO" />
 
     <!-- Interpolator chain controls -->
-	<!-- ADD RX Chain Controls --> 
+	<!-- ADD RX Chain Controls -->
 
     <ctl name="RX1 MIX1 INP1" value="ZERO" />
     <ctl name="RX2 MIX1 INP1" value="ZERO" />
@@ -559,12 +559,12 @@
         <path name="low-latency-playback bt-sco" />
     </path>
 
-    <!-- lct add for whatsapp call ring -->    
-    <path name="low-latency-playback speaker-and-bt-sco-wb"> 
-	 <path name="low-latency-playback bt-sco-wb" /> 
-	 <path name="low-latency-playback speaker" /> 
-    </path> 
-    
+    <!-- lct add for whatsapp call ring -->
+    <path name="low-latency-playback speaker-and-bt-sco-wb">
+	 <path name="low-latency-playback bt-sco-wb" />
+	 <path name="low-latency-playback speaker" />
+    </path>
+
     <path name="low-latency-playback speaker-and-hdmi">
         <path name="low-latency-playback hdmi" />
         <path name="low-latency-playback speaker" />
@@ -896,7 +896,7 @@
     <path name="compress-offload-playback4">
         <ctl name="INT0_MI2S_RX Audio Mixer MultiMedia11" value="1" />
     </path>
-	
+
     <path name="compress-offload-playback4 speaker">
         <ctl name="PRI_MI2S_RX Audio Mixer MultiMedia11" value="1" />
     </path>
@@ -966,7 +966,7 @@
     <path name="compress-offload-playback5">
         <ctl name="INT0_MI2S_RX Audio Mixer MultiMedia12" value="1" />
     </path>
-	
+
     <path name="compress-offload-playback5 speaker">
         <ctl name="PRI_MI2S_RX Audio Mixer MultiMedia12" value="1" />
     </path>
@@ -1035,7 +1035,7 @@
     <path name="compress-offload-playback6">
         <ctl name="INT0_MI2S_RX Audio Mixer MultiMedia13" value="1" />
     </path>
-	
+
     <path name="compress-offload-playback6 speaker">
         <ctl name="PRI_MI2S_RX Audio Mixer MultiMedia13" value="1" />
     </path>
@@ -1104,7 +1104,7 @@
     <path name="compress-offload-playback7">
         <ctl name="INT0_MI2S_RX Audio Mixer MultiMedia14" value="1" />
     </path>
-	
+
     <path name="compress-offload-playback7 speaker">
         <ctl name="PRI_MI2S_RX Audio Mixer MultiMedia14" value="1" />
     </path>
@@ -1173,7 +1173,7 @@
     <path name="compress-offload-playback8">
         <ctl name="INT0_MI2S_RX Audio Mixer MultiMedia15" value="1" />
     </path>
-	
+
     <path name="compress-offload-playback8 speaker">
         <ctl name="PRI_MI2S_RX Audio Mixer MultiMedia15" value="1" />
     </path>
@@ -1242,7 +1242,7 @@
     <path name="compress-offload-playback9">
         <ctl name="INT0_MI2S_RX Audio Mixer MultiMedia16" value="1" />
     </path>
-	
+
     <path name="compress-offload-playback9 speaker">
         <ctl name="PRI_MI2S_RX Audio Mixer MultiMedia16" value="1" />
     </path>
@@ -1379,7 +1379,7 @@
         <ctl name="INT0_MI2S_RX Port Mixer SLIM_8_TX" value="1" />
         <ctl name="INT0_MI2S_RX_DL_HL Switch" value="1" />
     </path>
-	
+
     <path name="play-fm speaker">
         <ctl name="SLIMBUS_8 LOOPBACK Volume" value="1" />
         <ctl name="PRI_MI2S_RX Port Mixer SLIM_8_TX" value="1" />
@@ -2073,10 +2073,10 @@
 
     <path name="headphones-karaoke">
         <path name="headphones" />
-	<ctl name="RX1 MIX2 INP1" value="IIR1" /> 
-	<ctl name="RX2 MIX2 INP1" value="IIR1" /> 
-	<ctl name="IIR1 INP1 Volume" value="80" /> 
-	<ctl name="IIR1 INP2 Volume" value="80" /> 
+	<ctl name="RX1 MIX2 INP1" value="IIR1" />
+	<ctl name="RX2 MIX2 INP1" value="IIR1" />
+	<ctl name="IIR1 INP1 Volume" value="80" />
+	<ctl name="IIR1 INP2 Volume" value="80" />
     </path>
 
     <path name="true-native-mode">
@@ -2130,8 +2130,8 @@
 
     <path name="voice-headphones">
         <path name="headphones" />
-	<ctl name="RX1 Digital Volume" value="84" />
-        <ctl name="RX2 Digital Volume" value="84" />
+	<ctl name="RX1 Digital Volume" value="93" />
+        <ctl name="RX2 Digital Volume" value="93" />
     </path>
 
     <path name="voice-line">
@@ -2151,7 +2151,7 @@
         <path name="headphones-ce" />
         <path name="speaker" />
     </path>
-    
+
     <path name="speaker-and-headphones-no-ce">
     <path name="headphones-no-ce" />
     <path name="speaker" />
@@ -2312,7 +2312,7 @@
     <path name="voice-dmic-ef">
         <path name="dmic-endfire" />
     </path>
-    
+
     	<path name="voice-speaker-tmic">
         <path name="dmic-endfire" />
     </path>
