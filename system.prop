@@ -16,6 +16,7 @@ persist.rild.nitz_short_ons_2=
 persist.rild.nitz_short_ons_3=
 ril.subscription.types=NV,RUIM
 DEVICE_PROVISIONED=1
+persist.sys.fflag.override.settings_network_and_internet_v2=true
 
 #set dpm related prop
 persist.vendor.dpm.feature=1
