@@ -1165,11 +1165,11 @@ vendor/lib64/libqti-perfd.so|279a82bfcdfb30c9991dfda44ee923ee9d4c3eca
 vendor/lib64/libqti-util.so|98bbc3a80fee315fe7de34f0ed5b2ec3042b8d58
 vendor/lib64/vendor.qti.hardware.perf@1.0.so|4b9ac07cfd96d475701642a3e7adfcca58e364e1
 
-# Peripheral manager
-vendor/bin/pm-proxy
-vendor/bin/pm-service
-vendor/lib/libperipheral_client.so
-vendor/lib64/libperipheral_client.so
+# Peripheral manager - from LA.UM.8.2.r1-04000-sdm660.0
+vendor/bin/pm-proxy|bc4e972e3fe595b973197efe5114da8ff4339a59
+vendor/bin/pm-service|b0f77edfe04a3cc6284738196c0044e676d5eeb3
+vendor/lib/libperipheral_client.so|836411f7b88afe296b3f3090aab70fc5700ba434
+vendor/lib64/libperipheral_client.so|a0dd574c8af3135adae10ef49065fa765906db7a
 
 # Power-off charging daemon
 -sbin/charger:sbin/chargeonlymode;rootfs|664dfa548b81cac348f1699222160f8d2b4d247c
