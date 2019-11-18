@@ -485,6 +485,7 @@ PRODUCT_BOOT_JARS += \
 
 PRODUCT_PACKAGES += \
     libaacwrapper \
+    libmediaextractorservice \
     libnl
 
 # Wallpapers
