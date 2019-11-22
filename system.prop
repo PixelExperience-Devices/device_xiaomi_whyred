@@ -26,19 +26,11 @@ persist.vendor.dpm.nsrm.bkg.evt=3955
 #
 ro.telephony.default_network=22,20
 
-# Make data selection stick in dual SIM devices
-persist.radio.aosp_usr_pref_sel=true
-
 debug.sf.enable_hwc_vds=1
-debug.sf.early_app_phase_offset_ns=1500000
-debug.sf.early_gl_phase_offset_ns=3000000
-debug.sf.early_gl_app_phase_offset_ns=15000000
-debug.sf.early_phase_offset_ns=1500000
 debug.sf.hw=1
 debug.gralloc.enable_fb_ubwc=1
 dev.pm.dyn_samplingrate=1
 persist.demo.hdmirotationlock=false
-
 #Disable Skip Validate
 sdm.debug.disable_skip_validate=1
 
@@ -48,19 +40,6 @@ vendor.display.enable_default_color_mode=0
 # Display Properties as per treble compliance
 vendor.gralloc.enable_fb_ubwc=1
 vendor.display.disable_skip_validate=1
-
-debug.sf.disable_backpressure=1
-
-# Disable buffer age (b/74534157)
-debug.hwui.use_buffer_age=false
-
-# Properties to improve rendering
-debug.enable.sglscale=1
-debug.egl.hw=1
-debug.sf.disable_hwc=0
-debug.sf.recomputecrop=0
-persist.hwc.ptor.enable=true
-debug.sf.gpu_comp_tiling=1
 
 #ro.hdmi.enable=true
 #
@@ -85,7 +64,7 @@ media.stagefright.thumbnail.prefer_hw_codecs=true
 #property to enable narrow search range for video encoding
 vidc.enc.target_support_bframe=1
 vendor.vidc.enc.disable_bframes=1
-vendor.vidc.dec.enable.downscalar=0
+vendor.vidc.dec.enable.downscalar=1
 
 # enable PQ feature by default
 vendor.vidc.enc.disable.pq=false
@@ -156,15 +135,11 @@ persist.radio.VT_CAM_INTERFACE=2
 persist.vendor.qti.telephony.vt_cam_interface=1
 
 #property to enable user to access Google WFD settings
-#persist.debug.wfd.enable=1
+persist.debug.wfd.enable=1
 #Enable stm-events
 persist.debug.coresight.config=stm-events
 ##property to choose between virtual/external wfd display
 persist.sys.wfd.virtual=0
-
-#min/max cpu in core control
-ro.vendor.qti.core_ctl_min_cpu=2
-ro.vendor.qti.core_ctl_max_cpu=4
 
 #Bringup properties
 persist.vendor.radio.atfwd.start=true
@@ -172,14 +147,15 @@ persist.vendor.radio.atfwd.start=true
 #property to enable VDS WFD solution
 persist.hwc.enable_vds=1
 
+#Settings to enable sensors
+#Device Orientation sensor
+ro.vendor.sensors.dev_ori=true
 #Persistent Motion Detector
 ro.vendor.sensors.pmd=true
 #Stationary Detector
 ro.vendor.sensors.sta_detect=true
 #Motion Detector
 ro.vendor.sensors.mot_detect=true
-#enable pickup gesture
-ro.vendor.sensors.pug=true
 
 #Expose aux camera for below packages
 camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.qualcomm.qti.qmmi
@@ -250,8 +226,4 @@ persist.vendor.radio.data_con_rprt=1
 #lct liuxuan add the dom ignore time
 persist.vendor.radio.ignore_dom_time=15
 
-# IMS
-persist.dbg.ims_volte_enable=1 
-persist.dbg.volte_avail_ovr=1
-persist.dbg.vt_avail_ovr=1
 
