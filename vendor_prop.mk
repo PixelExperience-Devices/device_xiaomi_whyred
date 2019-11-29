@@ -105,7 +105,9 @@ vendor.audio.feature.deepbuffer_as_primary.enable=false \
 vendor.audio.feature.vbat.enable=true \
 vendor.audio.feature.wsa.enable=false \
 vendor.audio.feature.audiozoom.enable=false \
-vendor.audio.feature.snd_mon.enable=true
+vendor.audio.feature.snd_mon.enable=true \
+vendor.audio.feature.a2dp_offload.enable=false \
+vendor.audio.feature.audio_sphere.enable=true
 
 #enable dualmic fluence for voice communication
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -125,8 +127,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_PROPERTY_OVERRIDES += \
     vendor.audio_hal.in_period_size=144 \
-    vendor.audio_hal.period_multiplier=3 \
-    vendor.audio.adm.buffering.ms=2
+    vendor.audio_hal.period_multiplier=2 \
+    vendor.audio.adm.buffering.ms=3
 
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.audio.hw.binder.size_kbyte=1024
