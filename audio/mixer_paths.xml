@@ -378,7 +378,7 @@
     <ctl name="DEC2 MUX" value="ZERO" />
     <ctl name="DEC3 MUX" value="ZERO" />
     <ctl name="DEC4 MUX" value="ZERO" />
-    <ctl name="ADC2 MUX" value="INP3" />
+    <ctl name="ADC2 MUX" value="ZERO" />
     <ctl name="RDAC2 MUX" value="ZERO" />
 
     <!-- Interpolator chain controls -->
