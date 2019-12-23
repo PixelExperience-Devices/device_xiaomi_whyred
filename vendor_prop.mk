@@ -94,7 +94,8 @@ vendor.audio.feature.vbat.enable=true \
 vendor.audio.feature.wsa.enable=false \
 vendor.audio.feature.audiozoom.enable=false \
 vendor.audio.feature.snd_mon.enable=true \
-vendor.audio.feature.a2dp_offload.enable=false
+vendor.audio.feature.a2dp_offload.enable=false \
+vendor.hw.fm.init=0
 
 #enable AAC frame ctl for A2DP sinks
 PRODUCT_PROPERTY_OVERRIDES += \
