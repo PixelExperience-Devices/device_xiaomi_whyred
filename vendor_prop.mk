@@ -47,6 +47,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.audio.parser.ip.buffer.size=262144 \
     vendor.audio.flac.sw.decoder.24bit=true \
     persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxhd-aac \
+    persist.bluetooth.a2dp_offload.cap=sbc-aptx-aptxhd-aac \
+    ro.vendor.bluetooth.wipower=false \
     vendor.audio.use.sw.alac.decoder=true \
     vendor.audio.use.sw.ape.decoder=true \
     vendor.audio.hw.aac.encoder=true \
@@ -106,8 +108,7 @@ vendor.audio.feature.vbat.enable=true \
 vendor.audio.feature.wsa.enable=false \
 vendor.audio.feature.audiozoom.enable=false \
 vendor.audio.feature.snd_mon.enable=true \
-vendor.audio.feature.a2dp_offload.enable=false \
-vendor.audio.feature.audio_sphere.enable=true
+vendor.audio.feature.a2dp_offload.enable=false
 
 #enable dualmic fluence for voice communication
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -128,7 +129,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     vendor.audio_hal.in_period_size=144 \
     vendor.audio_hal.period_multiplier=2 \
-    vendor.audio.adm.buffering.ms=3
+    vendor.audio.adm.buffering.ms=12
 
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.audio.hw.binder.size_kbyte=1024
