@@ -2,12 +2,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.job_delay=true \
     persist.sys.mcd_config_file=/system/etc/mcd_default.conf \
     drm.service.enabled=true \
-    dalvik.vm.heapgrowthlimit=256m \
-    dalvik.vm.heapstartsize=8m \
-    dalvik.vm.heapsize=512m \
-    dalvik.vm.heaptargetutilization=0.75 \
-    dalvik.vm.heapminfree=512k \
-    dalvik.vm.heapmaxfree=8m \
     vendor.video.disable.ubwc=1 \
     persist.radio.multisim.config=dsds \
     persist.vendor.qcomsysd.enabled=1 \
@@ -56,10 +50,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.fm.a2dp.conc.disabled=true \
     audio.sys.noisy.broadcast.delay=600 \
     persist.vendor.audio.hifi.int_codec=true \
-    audio.sys.offload.pstimeout.secs=3 \
-    ro.vendor.sensors.facing=false \
-    ro.vendor.sensors.cmc=false \
-    ro.vendor.sdk.sensors.gestures=false
+    audio.sys.offload.pstimeout.secs=3
 
 #enable headset calibration
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -133,6 +124,16 @@ PRODUCT_PROPERTY_OVERRIDES += \
 #Density
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=440
+
+# Sensors
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.vendor.sdk.sensors.gestures=false \
+    ro.vendor.sensors.cmc=false \
+    ro.vendor.sensors.dev_ori=false \
+    ro.vendor.sensors.facing=false \
+    ro.vendor.sensors.mot_detect=true \
+    ro.vendor.sensors.pmd=true \
+    ro.vendor.sensors.sta_detect=true
 
 # SurfaceFlinger
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
