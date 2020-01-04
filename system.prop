@@ -144,6 +144,9 @@ ro.af.client_heap_size_kbyte=7168
 #system prop for RmNet Data
 persist.data.df.dev_name=rmnet_usb0
 
+#set SAR feature
+persist.radio.dynamic_sar=false
+
 #
 # system property determining camera HAL to be used for a Video call
 #
