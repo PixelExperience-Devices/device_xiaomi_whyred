@@ -177,3 +177,4 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.telephony.iwlan_operation_mode=legacy
+    persist.vendor.data.iwlan.enable=true
