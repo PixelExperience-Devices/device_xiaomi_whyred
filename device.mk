@@ -372,6 +372,7 @@ PRODUCT_PACKAGES += \
     init.safailnet.rc \
     init.target.rc \
     ueventd.qcom.rc \
+    init.recovery.qcom.rc \
     fstab.qcom
 
 # RCS
