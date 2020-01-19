@@ -114,12 +114,19 @@ $(WCNSS_MAC_SYMLINK): $(LOCAL_INSTALLED_MODULE)
 
 ALL_DEFAULT_INSTALLED_MODULES += $(WCNSS_INI_SYMLINK) $(WCNSS_MAC_SYMLINK)
 
-EGL_SYMLINK := $(TARGET_OUT_VENDOR)/lib/libEGL_adreno.so
+EGL_SYMLINK := $(TARGET_OUT_VENDOR)/lib/libGLESv2_adreno.so
 $(EGL_SYMLINK): $(LOCAL_INSTALLED_MODULE)
 	@mkdir -p $(dir $@)
 	$(hide) ln -sf egl/$(notdir $@) $@
 
 ALL_DEFAULT_INSTALLED_MODULES += $(EGL_SYMLINK)
+
+EGL_SYMLINK64 := $(TARGET_OUT_VENDOR)/lib64/libGLESv2_adreno.so
+$(EGL_SYMLINK64): $(LOCAL_INSTALLED_MODULE)
+	@mkdir -p $(dir $@)
+	$(hide) ln -sf egl/$(notdir $@) $@
+
+ALL_DEFAULT_INSTALLED_MODULES += $(EGL_SYMLINK64)
 
 subdir_makefiles=$(call first-makefiles-under,$(LOCAL_PATH))
 $(foreach mk,$(subdir_makefiles),$(info including $(mk) ...)$(eval include $(mk)))
