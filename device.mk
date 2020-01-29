@@ -132,7 +132,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     audio.bluetooth.default \
     android.hardware.bluetooth.audio@2.0-impl \
-    libbthost_if \
     libldacBT_dec
 
 # Sensor HAL conf file
