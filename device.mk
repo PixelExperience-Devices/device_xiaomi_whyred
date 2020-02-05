@@ -261,7 +261,7 @@ PRODUCT_PACKAGES += \
 # Moar Ril packages
 PRODUCT_PACKAGES += \
     qti-telephony-hidl-wrapper \
-    qti-telephony-hidl-wrapper.xml \
+    qti_telephony_hidl_wrapper.xml \
     qti-telephony-utils \
     qti_telephony_utils.xml
 
