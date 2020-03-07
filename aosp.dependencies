@@ -7,7 +7,7 @@
   {
     "repository" : "kernel_xiaomi_whyred",
     "target_path": "kernel/xiaomi/whyred",
-    "branch": "ten-camfix"
+    "branch": "ten"
   },
   {
     "repository": "vendor_MiuiCamera",
