@@ -1,6 +1,5 @@
 /*
    Copyright (c) 2014, The Linux Foundation. All rights reserved.
-
    Redistribution and use in source and binary forms, with or without
    modification, are permitted provided that the following conditions are
    met:
@@ -13,7 +12,6 @@
     * Neither the name of The Linux Foundation nor the names of its
       contributors may be used to endorse or promote products derived
       from this software without specific prior written permission.
-
    THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESS OR IMPLIED
    WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
    MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT
@@ -26,6 +24,9 @@
    OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
    IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
+
+#include <fstream>
+#include <unistd.h>
 
 #include <stdlib.h>
 #define _REALLY_INCLUDE_SYS__SYSTEM_PROPERTIES_H_
@@ -55,9 +56,27 @@ void property_override_dual(char const system_prop[], char const vendor_prop[],
     property_override(vendor_prop, value);
 }
 
+static void init_setup_model_properties()
+{
+    std::ifstream fin;
+    std::string buf;
+
+    fin.open("/proc/cmdline");
+    while (std::getline(fin, buf, ' '))
+        if (buf.find("androidboot.hwc") != std::string::npos)
+            break;
+
+    if (buf.find("India") != std::string::npos) {
+        property_override_dual("ro.product.model", "ro.vendor.product.model", "Redmi Note 5 Pro");
+    } else {
+        property_override_dual("ro.product.model", "ro.vendor.product.model",  "Redmi Note 5");
+    }
+
+    fin.close();
+}
+
 void vendor_load_properties()
 {
-    // fingerprint
-    property_override("ro.build.description", "whyred-user 9 PKQ1.180904.001 V11.0.3.0.PEIMIXM release-keys");
-    property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "google/coral/coral:10/QQ1B.191205.011/5974828:user/release-keys");
+      init_setup_model_properties();
 }
+
