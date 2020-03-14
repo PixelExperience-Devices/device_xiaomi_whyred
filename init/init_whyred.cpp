@@ -71,7 +71,7 @@ static void init_setup_model_properties()
     } else {
         property_override_dual("ro.product.model", "ro.vendor.product.model",  "Redmi Note 5");
     }
-
+        property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "google/coral/coral:10/QQ2A.200305.003/6156912:user/release-keys");
     fin.close();
 }
 
