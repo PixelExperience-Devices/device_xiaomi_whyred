@@ -962,13 +962,13 @@ lib/libfm-hci.so|ad7e34a7df8e51c7308adc177b0ed328e7db0dce
 lib/fm_helium.so|fb2a591a61122bbdf818ba9e6c931aa7c3d8a953
 lib64/libfm-hci.so|91bd4fad13d3d675f8e47f06b5622af6d33b1c24
 lib64/fm_helium.so|e41e3a18f5a0dc666adad471e7332c707b4d2044
-vendor/bin/fm_qsoc_patches|ea7004d7d85227e56df2f8b49a529df92f6b8726
--lib/vendor.qti.hardware.fm@1.0.so|a49989075a58bb0292f24b46610c481e59043d68
--lib64/vendor.qti.hardware.fm@1.0.so|e72205810d49a96b01edefc5e18e5c181a4555d2
+vendor/bin/fm_qsoc_patches|3f00e388a0845de392af0b36d3ac8b05efa94f62
+-lib/vendor.qti.hardware.fm@1.0.so|0b9e8bded24287a9e1440426a1db8d5b31732530
+-lib64/vendor.qti.hardware.fm@1.0.so|34aa3eb527288565f4bd70572fbdd9b9e4731767
 vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so|86868d5881edec74cf0b22a77fc69a67d379d51e
-vendor/lib/vendor.qti.hardware.fm@1.0.so|cfa66eaded02ef69e2323fa070f2cb97aa718dd7
+vendor/lib/vendor.qti.hardware.fm@1.0.so|1120711dad046b2f21a93f5fd5a7698312218aee
 vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so|a0c6c4db121efb49bf039951d531fb09f3f233fe
-vendor/lib64/vendor.qti.hardware.fm@1.0.so|db3afdb3dcc6e39effed66e6397131a1dafd86a1
+vendor/lib64/vendor.qti.hardware.fm@1.0.so|b5b1a7b878873f8a0376de2fa232f99208466e55
 
 # Gatekeeper - from jasmine_sprout 9 PKQ1.180904.001 V10.0.17.0.PDIMIXM release-keys
 vendor/lib/hw/gatekeeper.sdm660.so|bb56ae8a8fcc13148d1723044b8c617e6cf0b7ae
@@ -1486,7 +1486,7 @@ vendor/lib64/libthermalioctl.so|2f0ee866e9059b1df9ca7b63815591354e7c77d8
 -vendor/lib64/libthermalclient.so|84072e150722cc668320f07a75cb8695ce1a79b0
 
 # Time services - from jasmine-user 10 QKQ1.190910.002 V11.0.4.0.QDIMIXM release-keys
--vendor/app/TimeService/TimeService.apk;:timeservice_app_cert-legacy-um|27f9b81621c446baa8c37581d9bfbca2fd67b496
+-vendor/app/TimeService/TimeService.apk|27f9b81621c446baa8c37581d9bfbca2fd67b496
 vendor/bin/time_daemon|d647fa02dfb28b6cb981c4e77daee75a67406351
 vendor/etc/init/init.time_daemon.rc|b253ca2a498757e14e1d7a051bf504ae09218f51
 -vendor/lib/libtime_genoff.so|e858cc52e829af0a9e4b5a4c39bddef8cece4bd9
