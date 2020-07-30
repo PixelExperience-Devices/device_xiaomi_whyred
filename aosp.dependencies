@@ -1,6 +1,25 @@
 [
   {
-    "repository": "device_xiaomi_sdm660-common",
-    "target_path": "device/xiaomi/sdm660-common"
+    "remote":      "github",
+    "repository":  "PixelExperience-Devices/device_xiaomi_sdm660-common",
+    "target_path": "device/xiaomi/sdm660-common",
+    "branch":      "ten-whyred"
+  },
+  {
+    "remote":      "github",
+    "repository":  "AOSiP-Devices/proprietary_vendor_xiaomi",
+    "target_path": "vendor/xiaomi",
+    "branch":      "ten"
+  },
+  {
+    "repository": "pixelexperience-devices/kernel_xiaomi_sdm660",
+    "target_path": "kernel/xiaomi/sdm660",
+    "branch": "ten"
+  },
+  {
+    "remote": "github",
+    "repository": "AOSiP-Devices/vendor_dirac",
+    "target_path": "vendor/dirac",
+    "branch": "ten"
   }
 ]
