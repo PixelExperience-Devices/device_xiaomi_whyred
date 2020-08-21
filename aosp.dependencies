@@ -6,20 +6,21 @@
     "branch":      "ten-whyred"
   },
   {
+    "repository"  : "vendor_xiaomi_sdm660-common",
+    "target_path" : "vendor/xiaomi/sdm660-common",
+    "branch"      : "ten",
+    "remote"      : "pixel-devices-bitbucket"
+  },
+  {
+    "repository"  : "vendor_xiaomi_whyred",
+    "target_path" : "vendor/xiaomi/whyred",
+    "branch"      : "ten",
+    "remote"      : "pixel-devices-bitbucket"
+  },
+  {
     "remote":      "github",
-    "repository":  "AOSiP-Devices/proprietary_vendor_xiaomi",
-    "target_path": "vendor/xiaomi",
-    "branch":      "ten"
-  },
-  {
-    "repository": "pixelexperience-devices/kernel_xiaomi_sdm660",
+    "repository":  "PixelExperience-Devices/kernel_xiaomi_sdm660",
     "target_path": "kernel/xiaomi/sdm660",
-    "branch": "ten"
-  },
-  {
-    "remote": "github",
-    "repository": "AOSiP-Devices/vendor_dirac",
-    "target_path": "vendor/dirac",
     "branch": "ten"
   }
 ]
