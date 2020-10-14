@@ -1,0 +1,20 @@
+[
+  {
+    "remote":      "github",
+    "repository":  "PixelExperience-Devices/device_xiaomi_sdm660-common",
+    "target_path": "device/xiaomi/sdm660-common",
+    "branch":      "ten-plus"
+  },
+  {
+    "repository"  : "vendor_xiaomi_whyred",
+    "target_path" : "vendor/xiaomi/whyred",
+    "branch"      : "ten",
+    "remote"      : "pixel-devices-blobs"
+  },
+  {
+    "remote":      "github",
+    "repository":  "SakilMondal/vendor_MiuiCamera",
+    "target_path": "vendor/MiuiCamera",
+    "branch":      "10.x"
+  }
+]
