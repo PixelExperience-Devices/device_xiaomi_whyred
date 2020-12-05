@@ -20,7 +20,7 @@
     android:versionName="1.0">
     <application android:hasCode="false" />
     <overlay
-      android:targetPackage="com.android.wifi.resources"
+      android:targetPackage="com.google.android.wifi.resources"
       android:targetName="WifiCustomization"
       android:isStatic="true"
       android:priority="1"/>
