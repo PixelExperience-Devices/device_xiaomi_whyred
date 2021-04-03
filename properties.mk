@@ -27,7 +27,3 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.camera.enableAdvanceFeatures=0x347 \
     persist.camera.max.previewfps=60 \
     persist.vendor.camera.max.previewfps=60
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    vendor.camera.hal1.packagelist=com.intsig.camscanner,com.instagram.android \
-    vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.motorola.faceunlock,com.android.camera
