@@ -124,13 +124,13 @@
       "ResetOnInit": true
     },
     {
-      "Name": "PMQoSCpuDmaLatency",
-      "Path": "/dev/cpu_dma_latency",
+      "Name": "ForegroundCpuset",
+      "Path": "/dev/cpuset/foreground/cpus",
       "Values": [
-        "43",
-        "100"
+        "0-3",
+        "0-3,6-7"
       ],
-      "HoldFd": true
+      "ResetOnInit": true
     },
     {
       "Name": "PowerHALMainState",
@@ -226,12 +226,6 @@
     },
     {
       "PowerHint": "LAUNCH",
-      "Node": "PMQoSCpuDmaLatency",
-      "Duration": 5000,
-      "Value": "43"
-    },
-    {
-      "PowerHint": "LAUNCH",
       "Node": "CPUBWHystTriggerCount",
       "Duration": 5000,
       "Value": "0"
@@ -265,18 +259,6 @@
       "Node": "GPUIdleTimer",
       "Duration": 5000,
       "Value": "10000"
-    },
-    {
-      "PowerHint": "AUDIO_LAUNCH",
-      "Node": "PMQoSCpuDmaLatency",
-      "Duration": 0,
-      "Value": "43"
-    },
-    {
-      "PowerHint": "AUDIO_STREAMING",
-      "Node": "PMQoSCpuDmaLatency",
-      "Duration": 2000,
-      "Value": "43"
     },
     {
       "PowerHint": "EXPENSIVE_RENDERING",
