@@ -706,16 +706,12 @@ vendor/lib64/libsensor1.so
 vendor/lib/sensors.ssc.so|bee13b2ad7f1ef0d2cf63708fa38ad76877ea287
 vendor/lib64/sensors.ssc.so|42577aa881baa287ec037c0e59972ad0e0358b08
 
-# Thermal
-vendor/etc/thermal-engine.conf
-vendor/etc/thermal-engine-map.conf
-vendor/etc/thermal-engine-normal.conf
-vendor/bin/thermal-engine
-vendor/lib/libthermalfeature.so
-vendor/lib64/libthermalfeature.so
-vendor/lib64/libthermalioctl.so
--vendor/lib/libthermalclient.so
--vendor/lib64/libthermalclient.so
+# Thermal - from ginkgo V12.5.1.0.RCOCNXM
+vendor/bin/thermal-engine|6cd660e2b813896670a14be244d1046afe90064e
+vendor/lib/libthermalclient.so|0aab8039958acdd27af71c5c6923dcd7208f886f
+vendor/lib/libthermalfeature.so|52c35a4e2bc048839e4f9172cc2d299e2367a1fd
+vendor/lib64/libthermalclient.so|ed01fa6caeb9dfbddc0fafc197abe13f3c8b56f9
+vendor/lib64/libthermalfeature.so|f2b78560b6b87c19336ae48ea26d3af756123047
 
 # Wifi - from jasmine V11.0.8.0.QDIMIXM
 vendor/bin/cnss-daemon|a371213adc8fc7677d519c8d942761ffeee0f345
