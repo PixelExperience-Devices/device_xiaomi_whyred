@@ -128,4 +128,9 @@
     <!-- Does the battery LED support multiple colors. Used to decide if the user can change the colors -->
     <bool name="config_multiColorBatteryLed">false</bool>
 
+    <!-- Radius of the software rounded corners. -->
+    <dimen name="rounded_corner_radius">39px</dimen>
+    <dimen name="rounded_corner_radius_top">38px</dimen>
+    <dimen name="rounded_corner_radius_bottom">39px</dimen>
+
 </resources>
