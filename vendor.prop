@@ -1,3 +1,6 @@
+# Adoptable Storage
+ro.crypto.volume.options=aes-256-xts
+
 # Camera
 persist.vendor.camera.HAL3.enabled=1
 persist.vendor.camera.awb.sync=2
