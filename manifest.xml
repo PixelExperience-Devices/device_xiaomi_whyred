@@ -9,4 +9,15 @@
         <transport>hwbinder</transport>
         <fqname>@1.0::IGoodixBiometricsFingerprint/default</fqname>
     </hal>
+    <hal format="hidl">
+        <name>com.fingerprints.extension</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IFingerprintAuthenticator/default</fqname>
+        <fqname>@1.0::IFingerprintCalibration/default</fqname>
+        <fqname>@1.0::IFingerprintEngineering/default</fqname>
+        <fqname>@1.0::IFingerprintNavigation/default</fqname>
+        <fqname>@1.0::IFingerprintRecalibration/default</fqname>
+        <fqname>@1.0::IFingerprintSenseTouch/default</fqname>
+        <fqname>@1.0::IFingerprintSensorTest/default</fqname>
+    </hal>
 </manifest>
