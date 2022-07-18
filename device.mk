@@ -44,7 +44,8 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlay-pe
 
 # Powerhint
-EAS_POWERHINT_VARIANT := sdm636
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
 
 # Ramdisk
 PRODUCT_PACKAGES += \
