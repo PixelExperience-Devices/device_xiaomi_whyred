@@ -95,5 +95,6 @@ void vendor_load_properties()
         property_override_dual("ro.product.odm.model", "ro.product.system.model", "Redmi Note 5 Pro");
         property_override_dual("ro.product.vendor.model", "persist.vendor.camera.exif.model", "Redmi Note 5 Pro");
 	}
+    property_override("ro.treble.enabled", "");
   }
 }
