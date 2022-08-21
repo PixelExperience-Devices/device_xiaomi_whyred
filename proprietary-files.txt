@@ -631,7 +631,7 @@ vendor/lib/libois_bu63165.so
 vendor/lib/libois_lc898122.so
 
 # Camera watermark - from jasmine V11.0.8.0.QDIMIXM
-vendor/lib/libMiWatermark.so|fe09202b8283cd88f86e96a5ef52b4db94b7ade5
+vendor/lib/libMiWatermark.so|4aa02ef5d64c71556bbab4e414e5a21249e65203
 vendor/lib/libft2vendor.so|1332ed2141660b9372c959ca1155575c25a73751
 
 # Display calibration
