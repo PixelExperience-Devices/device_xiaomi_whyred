@@ -19,6 +19,7 @@ TARGET_SCREEN_DENSITY := 440
 # Kernel
 TARGET_KERNEL_SOURCE := kernel/xiaomi/whyred
 TARGET_KERNEL_CONFIG := whyred_defconfig
+TARGET_KERNEL_LLVM_BINUTILS := false
 
 # Manifest
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
